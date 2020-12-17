@@ -25,7 +25,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/whoami", function (req, res){
-  app.json({ipaddress: req.ip});
+  res.json({ipaddress: req.ip});
 });
 
 // listen for requests :)
